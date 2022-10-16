@@ -17,6 +17,6 @@ class Solution
                     matches = matches + (n - 1);
                 }
             }
-            return matches;
+            return matches; //or just simply return n-1 instead of all this
         }
 };

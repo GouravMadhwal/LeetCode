@@ -3,11 +3,7 @@ class Solution
     public:
         bool checkIfPangram(string sentence)
         {
-            set<char> ans;
-            for (int i = 0; i < sentence.size(); i++)
-            {
-                ans.emplace(sentence[i]);
-            }
+            set<char> ans(sentence.begin(), sentence.end());
             if (ans.size() == 26)
             {
                 return true;

@@ -2,8 +2,8 @@ class Solution {
 public:
     int minPartitions(string n) {
         int ans = 0;
-        for(int i=0;i<n.size();++i){
-            ans = max(n[i] - '0', ans);
+        for(char c : n){
+            ans = max(ans, c-'0');
         }
         return ans;
     }

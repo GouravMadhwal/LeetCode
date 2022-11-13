@@ -1,9 +1,10 @@
 class MedianFinder
 {
     public:
-        // MedianFinder() {}
-    priority_queue<int, vector < int>, greater < int>> right;
-    priority_queue<int> left;
+       	// MedianFinder() {
+        priority_queue<int, vector < int>, greater < int>> right;
+        priority_queue<int> left;
+   	    // }
     void addNum(int num)
     {
         right.push(num);
